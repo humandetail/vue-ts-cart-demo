@@ -1,29 +1,11 @@
-# ts_shopping_cart
+## 开始
 
-## Project setup
-```
+```shell
+git clone git@github.com:humandetail/vue-ts-cart-demo.git
+
+cd vue-ts-cart-demo
+
 npm install
-```
 
-### Compiles and hot-reloads for development
+npm run dev
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
