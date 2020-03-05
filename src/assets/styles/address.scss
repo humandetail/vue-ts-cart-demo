@@ -1,0 +1,75 @@
+@import './variables.scss';
+
+.address-wrapper {
+  padding: .15rem 0;
+
+  .address-bd {
+    margin-top: .15rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &.needAfter::after {
+      content: '';
+      width: 32%;
+    }
+
+    .address-card {
+      position: relative;
+      width: 32%;
+      margin-bottom: .25rem;
+      padding: .15rem;
+      background-color: #fff;
+      border: 1px solid #fff;
+      border-radius: .05rem;
+      box-sizing: border-box;
+
+      .row {
+        padding: .1rem 0;
+        font-weight: 700;
+      }
+
+      .address-operations {
+        height: .22rem;
+        margin-top: .1rem;
+        text-align: center;
+        font-size: .14rem;
+
+        .default {
+          float: left;
+          padding: 0 3px;
+          border: 1px solid#ff5000;
+          border-radius: 3px;
+          background: #ffd6cc;
+          color: #f30;
+
+          &.set-default-btn {
+            display: none;
+          }
+        }
+
+        .delete-btn {
+          float: right;
+          color: $black;
+  
+          &:hover {
+            color: $mainColor;
+          }
+        }
+      }
+
+      &.default {
+        border-color: $mainColor;
+      }
+
+      &:hover {
+        border: 1px solid $mainColor;
+
+        .address-operations {
+          .set-default-btn {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,25 +1,28 @@
 <template>
-  <div class="page-home">
+  <div class="address-page">
     <common-header />
-    <cart />
+
+    <address-wrapper />
+
     <common-footer />
   </div>
 </template>
 
 <script lang="ts">
+
 import { Component, Vue } from 'vue-property-decorator';
 
 import CommonHeader from '@/components/header/Index.vue';
-import Cart from '@/components/main/cart/Index.vue';
+import AddressWrapper from '@/components/main/address/Index.vue';
 import CommonFooter from '@/components/footer/Index.vue';
 
 @Component({
-  name: 'Home',
+  name: 'Address',
   components: {
     CommonHeader,
-    Cart,
+    AddressWrapper,
     CommonFooter
   }
 })
-export default class Home extends Vue {}
+export default class Address extends Vue {}
 </script>

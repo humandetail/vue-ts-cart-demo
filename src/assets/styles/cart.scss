@@ -1,0 +1,379 @@
+@import './variables.scss';
+
+.cart-layout {
+  padding: .15rem 0;
+  
+  .cart-table {
+    margin-top: .15rem;
+
+    .cart-table-th {
+      background-color: #e1e1e1;
+
+      .th {
+        float: left;
+        padding-left: .15rem;
+        line-height: .4rem;
+        font-size: .14rem;
+        box-sizing: border-box;
+
+        &.th-chk {
+          width: 8%;
+
+          .txt {
+            margin-left: 2px;
+            cursor: pointer;
+          }
+        }
+
+        &.th-item {
+          width: 47%;
+          padding-left: .91rem;
+        }
+
+        &.th-price {
+          width: 10%;
+        }
+
+        &.th-number {
+          width: 10%;
+        }
+
+        &.th-sum {
+          width: 10%;
+        }
+
+        &.th-op {
+          width: 15%;
+        }
+      }
+    }
+
+    .cart-table-bd {
+      .order-holder {
+        margin-top: .15rem;
+
+        .order-header {
+          line-height: .4rem;
+          padding-left: .1rem;
+          font-size: .14rem;
+
+          .shop-icon {
+            display: inline-block;
+            margin: -.03rem 0 0 .06rem;
+            width: 16px;
+            height: 16px;
+            background: transparent url(//gw.alicdn.com/tfs/TB1boCXfmCWBuNjy0FhXXb6EVXa-800-600.png) no-repeat;
+            background-position: -20px -105px;
+            vertical-align: middle;
+          }
+
+          .shop-txt {
+            color: $black;
+            margin-left: .06rem;
+          }
+
+          .shop-name {
+            color: #3c3c3c;
+
+            &:hover {
+              color: $mainColor;
+            }
+          }
+        }
+
+        .order-content {
+          border: 1px solid #ccc;
+
+          .order-item {
+            padding: .15rem 0;
+            background-color: #fff;
+
+            .td {
+              float: left;
+              padding-left: .15rem;
+              box-sizing: border-box;
+
+              &.td-chk {
+                width: 3%;
+              }
+
+              &.td-item {
+                width: 52%;
+                height: .8rem;
+                padding-left: 0;
+
+                .item-pic {
+                  width: .8rem;
+                  height: .8rem;
+                  border: 1px solid #eee;
+                  box-sizing: border-box;
+
+                  img {
+                    max-width: 100%;
+                    max-height: 100%;
+                  }
+                }
+
+                .item-title {
+                  flex: 1;
+                  padding: 0 .1rem;
+                  height: .8rem;
+                  line-height: 1.5;
+                  color: $black;
+
+                  &:hover {
+                    color: $mainColor;
+                    text-decoration: underline;
+                  }
+                }
+              }
+      
+              &.td-price {
+                width: 10%;
+                color: #3c3c3c;
+              }
+      
+              &.td-number {
+                width: 10%;
+
+                .td-inner {
+                  position: relative;
+
+                  .amount-wrapper {
+                    .item-amount {
+                      &::after {
+                        content: '';
+                        display: table;
+                        clear: both;
+                      }
+
+                      .minus,
+                      .amount-text,
+                      .plus {
+                        display: block;
+                        float: left;
+                      }
+                      
+                      .minus,
+                      .plus {
+                        width: 17px;
+                        height: 23px;
+                        border: 1px solid #e5e5e5;
+                        background-color: #f0f0f0;
+                        text-align: center;
+                        line-height: 23px;
+                        color: $black;
+
+                        &:hover {
+                          color: #fff;
+                          background-color: $mainColor;
+                          border-color: $mainColor;
+                        }
+
+                        &.no-minus,
+                        &.no-plus {
+                          color: #e5e5e5;
+
+                          &:hover {
+                            color: #e5e5e5;
+                            background-color: #f0f0f0;
+                            border-color: #e5e5e5;
+                          }
+                        }
+                      }
+
+                      .amount-text {
+                        width: 39px;
+                        height: 15px;
+                        padding: 4px 0;
+                        border: 1px solid #ddd;
+                        background: transparent url(//img.alicdn.com/tfs/TB1K3cfdhGYBuNjy0FnXXX5lpXa-271-453.png) no-repeat;
+                        background-position: -75px -375px;
+                        border: 1px solid#aaa;
+                        line-height: 15px;
+                        color:#343434;
+                        text-align: center;
+                      }
+                    }
+                  }
+
+                  .goods-max-tips {
+                    position: absolute;
+                    left: 0;
+                    top: .25rem;
+                    width: .79rem;
+                    padding: 5px 10px;
+                    border-width: 0 1px 1px 1px;
+                    border-color: #ffe1d3;
+                    border-style: solid;
+                    background: #fff0e7;
+                    color: $mainColor;
+                    font-size: .12rem;
+                    text-align: center;
+                    box-sizing: border-box;
+
+                    .num {
+                      padding: 0 4px;
+                    }
+                  }
+                }
+              }
+      
+              &.td-sum {
+                width: 10%;
+                color: $mainColor;
+                font-weight: 700;
+              }
+      
+              &.td-op {
+                width: 15%;
+
+                .delete-item-btn {
+                  color: $black;
+                  
+                  &:hover {
+                    color: $mainColor;
+                  }
+                }
+              }
+            }
+
+            & + .order-item {
+              border-top: 1px solid #e7e7e7;
+            }
+
+            &.checked {
+              background-color: #fff8e1;
+            }
+          }
+        }
+      }
+    }
+
+    .cart-table-tf {
+      margin-top: .15rem;
+      background-color: #e1e1e1;
+      line-height: .5rem;
+
+      .tf {
+        float: left;
+        padding-left: .15rem;
+        font-size: .14rem;
+        box-sizing: border-box;
+
+        &.tf-chk {
+          width: 6%;
+
+          .txt {
+            margin-left: 2px;
+            cursor: pointer;
+          }
+        }
+
+        &.tf-operations {
+          width: 49%;
+
+          .delete-btn {
+            color: $black;
+
+            &:hover {
+              color: $mainColor;
+            }
+          }
+        }
+
+        &.tf-selected-items {
+          width: 10%;
+
+          .selected-items-count {
+            font-weight: 700;
+            margin: 0 2px;
+            font-size: .18rem;
+            color: $mainColor;
+          }
+        }
+
+        &.tf-price-sum {
+          width: 25%;
+          text-align: right;
+
+          .txt {
+            color: #555;
+          }
+
+          .price {
+            color: $mainColor;
+            font-size: .22rem;
+            font-weight: 700;
+
+            .total-symbol {
+              font-size: .14rem;
+              font-weight: 400;
+              font-family: verdana;
+            }
+          }
+        }
+
+        &.tf-btn-area {
+          width: 10%;
+
+          .checkout-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: .18rem;
+            color: #fff;
+            background-color: $mainColor;
+            cursor: pointer;
+
+            &.disabled {
+              background-color: #B0B0B0;
+              cursor: not-allowed;
+            }
+          }
+        }
+      }
+    }
+
+    .cart-checkbox {
+      position: relative;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      vertical-align: middle;
+      overflow: hidden;
+
+      input {
+        position: absolute;
+        z-index: 0;
+        left: -20px;
+        top: -20px;
+      }
+
+      label {
+        float: left;
+        position: relative;
+        z-index: 1;
+        width: 15px;
+        height: 15px;
+        background: transparent url(//gw.alicdn.com/tfs/TB1boCXfmCWBuNjy0FhXXb6EVXa-800-600.png) no-repeat -9999px -9999px;
+        background-position: 0 0;
+        line-height: 200em;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      &.checked {
+        label {
+          background-position: 0 -20px;
+        }
+      }
+    }
+  }
+
+  .cart-empty {
+    line-height: 1rem;
+    padding: .5rem 0 .5rem 1.15rem;
+    background: transparent url(https://gtd.alicdn.com/tps/i3/T1TvXUXnNjXXXXXXXX-100-100.png) no-repeat scroll 0 .5rem;
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "err_code": 0,
+  "err_msg": "success",
+  "data": [
+    {
+      "id": "0001",
+      "name": "张三",
+      "address": "广东省广州市",
+      "postcode": "10010",
+      "phone": "13800138000",
+      "is_default": true
+    },
+    {
+      "id": "0002",
+      "name": "李四",
+      "address": "四川省成都市",
+      "postcode": "10000",
+      "phone": "13888888888",
+      "is_default": false
+    },
+    {
+      "id": "0003",
+      "name": "张三",
+      "address": "湖北省武汉市",
+      "postcode": "10086",
+      "phone": "13800138000",
+      "is_default": false
+    },
+    {
+      "id": "0004",
+      "name": "张三",
+      "address": "北京市",
+      "postcode": "123456",
+      "phone": "13800138000",
+      "is_default": false
+    },
+    {
+      "id": "0005",
+      "name": "王五",
+      "address": "广东省广州市",
+      "postcode": "10010",
+      "phone": "138666666666",
+      "is_default": false
+    }
+  ]
+}

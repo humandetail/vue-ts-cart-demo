@@ -1,0 +1,75 @@
+{
+  "err_code": 0,
+  "err_msg": "success",
+  "data": [
+    {
+      "id": "0001",
+      "shop_info": {
+        "shop_id": "1917047079",
+        "shop_name": "Apple Store"
+      },
+      "title": "Apple/苹果 13 英寸 Macbook Pro 1.4GHz 四核处理器 (Turbo Boost 最高可达 3.9GHz) 256GB 存储容量 触控栏和触控 ID",
+      "img": "https://img.alicdn.com/bao/uploaded/i4/1917047079/O1CN01TZd8eX22AEIFN9r2B_!!1917047079.jpeg_80x80.jpg",
+      "price": "11499.00",
+      "stock": 10,
+      "count": 1,
+      "is_checked": false
+    },
+    
+    {
+      "id": "0002",
+      "shop_info": {
+        "shop_id": "1917047079",
+        "shop_name": "Apple Store"
+      },
+      "title": "Apple/苹果 iPhone 11 Pro Max",
+      "img": "https://img.alicdn.com/bao/uploaded/i1/1917047079/O1CN01u63vLS22AEJ9sozvl_!!2-item_pic.png_80x80.jpg",
+      "price": "12699.00",
+      "stock": 3,
+      "count": 2,
+      "is_checked": true
+    },
+    
+    {
+      "id": "0003",
+      "shop_info": {
+        "shop_id": "1714128138",
+        "shop_name": "小米官方旗舰店"
+      },
+      "title": "小米 RedmiBook 14 增强版十代酷睿i7处理器便携学生笔记本电脑",
+      "img": "https://img.alicdn.com/bao/uploaded/i3/1714128138/O1CN01r5QZqH29zFkree6ZM_!!1714128138.png_80x80.jpg",
+      "price": "4999.00",
+      "stock": 5,
+      "count": 1,
+      "is_checked": false
+    },
+    
+    {
+      "id": "0004",
+      "shop_info": {
+        "shop_id": "2134802284",
+        "shop_name": "佳能官方旗舰店"
+      },
+      "title": "Canon/佳能 EOS 90D 套机 EF-S 18-55mm",
+      "img": "https://img.alicdn.com/bao/uploaded/i1/2134802284/O1CN01eWoQrA1Sk7AiWGET8_!!2134802284.jpg_80x80.jpg",
+      "price": "8899.00",
+      "stock": 8,
+      "count": 1,
+      "is_checked": false
+    },
+    
+    {
+      "id": "0005",
+      "shop_info": {
+        "shop_id": "2134802284",
+        "shop_name": "佳能官方旗舰店"
+      },
+      "title": "Canon/佳能 EF 16-35mm f/2.8L III USM",
+      "img": "https://img.alicdn.com/bao/uploaded/i3/2134802284/TB2L3HidAfb_uJkHFJHXXb4vFXa_!!2134802284.jpg_80x80.jpg",
+      "price": "15399.00",
+      "stock": 2,
+      "count": 1,
+      "is_checked": false
+    }
+  ]
+}
